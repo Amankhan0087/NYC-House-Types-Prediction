@@ -44,11 +44,11 @@ pip install numpy pandas matplotlib seaborn kagglehub
 - Dataset loading via kagglehub
 - Initial data exploration (head, info, describe, shape)
 - Missing value inspection
+- Exploratory visualizations: room type distribution, neighbourhood group distribution, numeric feature histograms, price vs. room type (boxen plot), feature correlation heatmap, and latitude/longitude scatterplot
 
 ## Roadmap
 
 - Data cleaning and feature engineering
-- Exploratory visualizations of price and location trends
 - Train and evaluate a room type classification model
 
 ## Author
