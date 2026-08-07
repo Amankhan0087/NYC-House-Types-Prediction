@@ -19,10 +19,10 @@ This project analyzes the New York City Airbnb Open Data dataset to understand p
 - NYC_House_Types_Prediction_.ipynb - main Jupyter/Colab notebook containing the full analysis
 
 ## Tech Stack
-
 - Python 3
 - pandas and numpy for data manipulation
 - matplotlib and seaborn for visualization
+- scikit-learn for train/test splitting and modeling
 - kagglehub for dataset download
 - Google Colab / Jupyter Notebook
 
@@ -31,7 +31,7 @@ This project analyzes the New York City Airbnb Open Data dataset to understand p
 ### Prerequisites
 
 ```bash
-pip install numpy pandas matplotlib seaborn kagglehub
+pip install numpy pandas matplotlib seaborn scikit-learn kagglehub
 ```
 
 ### Running the Notebook
@@ -45,11 +45,13 @@ pip install numpy pandas matplotlib seaborn kagglehub
 - Initial data exploration (head, info, describe, shape)
 - Missing value inspection
 - Exploratory visualizations: room type distribution, neighbourhood group distribution, numeric feature histograms, price vs. room type (boxen plot), feature correlation heatmap, and latitude/longitude scatterplot
+- Data cleaning: dropped non-predictive columns (id, name, host_id, host_name, last_review), filled missing reviews_per_month values with 0, and capped extreme outliers in price and minimum_nights at the 99th percentile
+- Train/test split (67/33) prepared for modeling using scikit-learn
 
 ## Roadmap
 
-- Data cleaning and feature engineering
 - Train and evaluate a room type classification model
+- Model evaluation and performance tuning
 
 ## Author
 
